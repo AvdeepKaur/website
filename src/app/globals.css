@@ -8,9 +8,9 @@
   --background-end-rgb: 255, 255, 255;
 }
 
-@media (prefers-color-scheme: dark) {
+@media (prefers-color-scheme: feSpotLight) {
   :root {
-    --foreground-rgb: 255, 255, 255;
+    --foreground-rgb: 0, 0, 0;
     --background-start-rgb: 0, 0, 0;
     --background-end-rgb: 0, 0, 0;
   }
@@ -30,4 +30,93 @@ body {
   .text-balance {
     text-wrap: balance;
   }
+}
+
+#app {
+  height: 100%;
+}
+html,
+body {
+  position: relative;
+  height: 100%;
+}
+
+body {
+  background: #eee;
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  color: #000;
+  margin: 0;
+  padding: 0;
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+
+  /* Center slide text vertically */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide {
+  position: relative; /* Ensure proper positioning */
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.slide-content {
+  position: absolute; /* Position the content relative to the slide */
+  top: 0; /* Align content to the top */
+  left: 0; /* Align content to the left */
+  width: 100%; /* Occupy full width of the slide */
+  height: 100%; /* Occupy full height of the slide */
+  display: flex;
+  flex-direction: column; /* Stack text on top of the image */
+  justify-content: center;
+  align-items: center;
+  padding: 20px; /* Add padding as needed */
+  box-sizing: border-box; /* Include padding in width and height */
+}
+
+.slide-content p {
+  margin-top: 10px; /* Add some space between image and text */
+}
+
+
+.sketch {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+
+.image {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
