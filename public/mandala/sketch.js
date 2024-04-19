@@ -3,7 +3,7 @@ let angle = 360 / symmetry;
 let colors; 
 
 function setup() { 
-  createCanvas(710, 710);
+  createCanvas(700, 700);
   angleMode(DEGREES);
   background(127);
   colors = [color("#663399"),color("#7953A9"), color("#8B74BD"), color("#6F2DA8")];

@@ -12,15 +12,15 @@ let inputText = '';
 let inputArray = [];
 
 function setup() {
-  createCanvas(600, 400);
+  createCanvas(700, 500);
   textSize(24);
   textAlign(CENTER, CENTER);
   noCursor();
-  
+
   let text = createP("Add a word to watch it rain:");
-  text.position(0, 385);
-  let inp = createInput('');
-  inp.position(185, 400);
+  text.position(0, 490);
+  let inp = createInput("");
+  inp.position(185, 500);
   inp.input(updateInput);
 }
 
