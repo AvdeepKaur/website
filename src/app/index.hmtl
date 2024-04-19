@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your Page Title</title>
+  <!-- Include necessary CSS files -->
+  <link rel="stylesheet" href="path/to/antd.css">
+  <link rel="stylesheet" href="path/to/mui.css">
+  <!-- Include necessary JavaScript files -->
+  <script src="path/to/react.js"></script>
+  <script src="path/to/react-dom.js"></script>
+  <!-- Include your own CSS file if needed -->
+  <link rel="stylesheet" href="path/to/your-styles.css">
+</head>
+<body>
+
+  <!-- Render the swiper component -->
+  <div id="swiper-function"></div>
+
+  <!-- Include necessary JavaScript files -->
+  <script src="path/to/antd.js"></script>
+  <script src="path/to/mui.js"></script>
+  <script>
+    // JavaScript code to render React components
+    ReactDOM.render(
+      React.createElement(ResponsiveAppBar),
+      document.getElementById('responsive-appbar')
+    );
+    ReactDOM.render(
+      React.createElement(Home),
+      document.getElementById('main-content')
+    );
+    ReactDOM.render(
+      React.createElement(SwiperFunction),
+      document.getElementById('swiper-function')
+    );
+  </script>
+</body>
+</html>
